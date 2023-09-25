@@ -19,5 +19,4 @@ function decToBinary(n)
 }
  
 // Driver program to test above function
-    let n = 7;
-    decToBinary(n);
+    
