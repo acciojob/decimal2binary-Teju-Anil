@@ -1,8 +1,8 @@
-def decimal_to_binary(decimal_num):
-    binary_num = bin(decimal_num)[2:]
-    return binary_num
+def decimal_to_binary(decimal_number):
+    binary_number = bin(decimal_number)
+    return binary_number[2:]
 
 # Example Usage
-decimal_input = int(input("Enter a decimal number: "))
-binary_output = decimal_to_binary(decimal_input)
-print(f"The binary representation is: {binary_output}")
+input_number = int(input("Enter a decimal number: "))
+binary_equivalent = decimal_to_binary(input_number)
+print(f"The binary equivalent of {input_number} is: {binary_equivalent}")
