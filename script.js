@@ -1,8 +1,32 @@
-def decimal_to_binary(decimal_number):
-    binary_number = bin(decimal_number)
-    return binary_number[2:]
 
-# Example Usage
-input_number = int(input("Enter a decimal number: "))
-binary_equivalent = decimal_to_binary(input_number)
-print(f"The binary equivalent of {input_number} is: {binary_equivalent}")
+// JavaScript program to convert binary to decimal
+
+// Function to convert binary to decimal
+function binaryToDecimal(n)
+{
+	let num = n;
+	let dec_value = 0;
+
+	// Initializing base value to 1, i.e 2^0
+	let base = 1;
+
+	let temp = num;
+	while (temp) {
+		let last_digit = temp % 10;
+		temp = Math.floor(temp / 10);
+
+		dec_value += last_digit * base;
+
+		base = base * 2;
+	}
+
+	return dec_value;
+}
+
+// Driver program to test above function
+	let num = 10101001;
+
+	document.write(binaryToDecimal(num) + "<br>");
+
+
+// This code is contributed by Surbhi Tyagi
