@@ -17,6 +17,8 @@ function decToBinary(n)
     for (let j = i - 1; j >= 0; j--)
         document.write(binaryNum[j]);
 }
- 
+   let n = 10;
+    decToBinary(n);
+     
 // Driver program to test above function
     
